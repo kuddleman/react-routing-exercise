@@ -5,6 +5,7 @@ import { Route, NavLink, BrowserRouter as Router, Switch } from 'react-router-do
 import App from './App';
 import Customer from './Customer'
 import Product from './Product'
+import NotFound from './Notfound'
 
 const routing = (
   <Router>
@@ -36,6 +37,7 @@ const routing = (
     <Route exact path="/" component={App} />
     <Route path="/Customer" component={Customer} />
     <Route path="/Product" component={Product} />
+    <Route component={ NotFound }/>
     </Switch>
   </div>
   </Router>

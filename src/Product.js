@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 
-const Products = ({ match }) => <p>{ match.prams.id}</p>
+const Products = ({ match }) => <p>{ match.params.id}</p>
 
 class Product extends Component {
   render() {
@@ -18,7 +18,7 @@ class Product extends Component {
             <Link to="/Product/Addgel, Trimax, Cello">Pen</Link>
           </li>
         </ul>
-        <Route path= "Product/:id" component={ Products } />
+        <Route path= "/Product/:id" component={ Products } />
       </div>
 
     )
